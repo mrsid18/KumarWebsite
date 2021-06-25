@@ -1,0 +1,46 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// To change the default colors to suit our theme
+
+// $primary: #0074d9;
+// $danger: #ff4136;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "danger": $danger
+// );
+
+// To create custom color other than bootstrap default colors, (Default colors will still be available, this will be extra) Comment it out if we don't need to add our custom colors and can simply change the default colors instead .
+
+// Create your own map
+$custom-colors: (
+  "violet": #282846,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 4. Include any optional Bootstrap components as you like (Yes, Only add those utilities that are needed so the files remain small. Comment those which are not needed. 
+
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/carousel";
+// @import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/transitions";
+// @import "../node_modules/bootstrap/scss/";
